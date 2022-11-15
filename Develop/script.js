@@ -1,8 +1,10 @@
+// sets the current time as this will be used to determine present past and future
+let currentTime = moment().format("HH");
+
 // displays the current date in the header of the page. We are using the current day, month and date format-no year
 let now = moment().format("dddd, MMMM Do");
 let displayDate = document.getElementById("currentDay");
 displayDate.innerHTML = now;
-let currentTime = moment().format("HH");
 
 
 //code to apply the past, present, or future class to each time by comparing the id to the current hour.
